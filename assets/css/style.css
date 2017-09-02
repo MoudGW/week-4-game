@@ -1,0 +1,55 @@
+body{
+	background-image: url('../images/starwar.png');
+	background-size: cover;
+}
+#players,#enemies{
+    display: -webkit-box;
+}
+#container{
+	margin: 10px;
+}
+img{
+	width: 120px;
+	height: 120px;
+}
+.players,.enemies{
+    display: grid;
+    margin:10px; 
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white; 
+    border: 3px solid #3D9970;
+    border-radius: 8px;
+}
+.enemies{
+	border: 3px solid #FF4136; 
+}
+#playerSelcted, #defender{
+	width: 145px;
+	height: 145px;
+}
+    h1 {font-size:30px;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+}
+button{
+	padding: 13px 25px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border: none;
+    background: #FF851B;
+    border-radius: 20px;
+}
+button:hover{
+	box-shadow: 1px 1px 1px white;
+}
+p{
+	    margin-top: 31px;
+    color: white;
+}
+#cont{
+ text-align: center;
+     width: 600px;
+
+}
