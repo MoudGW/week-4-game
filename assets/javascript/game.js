@@ -14,12 +14,14 @@ function display(x){
 function fight(){
 	if (player.power>0)
 	{
-	  player.power=player.power-enemie.attack;
+		      	  player.power=player.power-enemie.attack;
       enemie.power=enemie.power-player.attack;
       $('#defender').html("<div class='players'>"+enemie.name+'<img src='+enemie.image+'></img>'+enemie.power+'</div>'); 
       $('#playerSelcted').html("<div class='players'>"+player.name+'<img src='+player.image+'></img>'+player.power+'</div>');
+
 	 player.attack=player.attack+20;
 	  $('#containerd').find('p').text('you will hit back '+player.attack+' and you will be attacked by '+enemie.attack);
+
 	if (enemie.power<0)
 	{
 	if(players.length>0)
@@ -29,7 +31,6 @@ function fight(){
     $('#defender').html("<div class='players'>"+enemie.name+'<img src='+enemie.image+'></img>'+enemie.power+'</div>');
     $('#enemies').html('');
     display("enemies");
-    fight();
 	}else{
        $('#Attack').off();
 	   $('#containerd').find('p').text('you Won!!!!');
